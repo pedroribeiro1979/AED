@@ -402,19 +402,12 @@ class LibBSTree<K extends Comparable<? super K>,V> {
 		}
 	}
 
-	/* ****************************************************************************************************** */
-	/* ****************************************************************************************************** */
-	/* ****************************************************************************************************** */	
-	/* ****************************************************************************************************** */
-
-
 
 	public static <K extends Comparable<? super K>,V> K minimum(BSTree<K,V> t){
 
 		return minimum(t.root);
-
-
 	}
+
 	public static <K extends Comparable<? super K>,V> K minimum(BSTNode<K,V> t)
 	{
 		if (t.left == null )
@@ -428,7 +421,7 @@ class LibBSTree<K extends Comparable<? super K>,V> {
 	{
 		return maximum(t.root);
 	}
-	
+
 	public static <K extends Comparable<? super K>,V> K maximum(BSTNode<K,V> t) 
 	{
 		if (t.right == null)
@@ -441,21 +434,44 @@ class LibBSTree<K extends Comparable<? super K>,V> {
 		}		
 	}
 
+	/* ****************************************************************************************************** */
+	/* ****************************************************************************************************** */
+	/* ****************************************************************************************************** */	
+	/* ****************************************************************************************************** */
+
+
 	public static <K extends Comparable<? super K>,V> int minDepth(BSTree<K,V> t) {
 
-		
+		return minDepth(t.root) ;
 
 
 	}
-	
+
 	public static <K extends Comparable<? super K>,V> int minDepth(BSTNode<K,V> t) {
-		
-		
-		
+
+
+		if (t.left == null)
+		{
+			return 0;
+		}
+		else
+		{
+			if(t.left==null && t.right==null) 
+			{
+				return 1; 
+			}
+			//if(t.left==null || t.right==null) 
+		//	{ 
+				//return 1+Math.max(minDepth(t.left), minDepth(t.right));
+		//	}
+			//return 1 + Math.min(minDepth(t.left), minDepth(t.right));
+
+
+		}
 	}
-
-
-
-
-
 }
+
+
+
+
+

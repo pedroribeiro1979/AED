@@ -6,8 +6,8 @@ class Aula10 {
 
 
 		int[] data = {14, 4, 18, 3, 9, 16, 20, 7, 15, 17, 5};
-		int [] data2 = {10, 2, 9, 1, 4, 5, 3};
-		BSTree<Integer,Integer> t2 = new BSTree <Integer,Integer>();
+		//int [] data2 = {10, 2, 9, 1, 4, 5, 3};
+		//BSTree<Integer,Integer> t2 = new BSTree <Integer,Integer>();
 		BSTree<Integer,Integer> t = new BSTree<Integer,Integer>();
 		for(int i = 0 ; i < data.length ; i++ ) 
 		{
